@@ -8,7 +8,7 @@ import { theme } from './styles/themes';
 import { initialState, reducer } from './store/reducer';
 import { Context } from './store/context';
 
-const App: React.FC = () => {
+const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {

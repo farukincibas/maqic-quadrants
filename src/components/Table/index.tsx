@@ -5,7 +5,7 @@ import { Button } from '../../shared/Button';
 import { Context } from '../../store/context';
 import { ActionTypes } from '../../store/reducer';
 
-const Table: React.FC = () => {
+const Table = () => {
     const { state, dispatch } = useContext(Context);
 
     const handleAdd = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {

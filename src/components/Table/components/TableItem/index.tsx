@@ -8,7 +8,7 @@ interface TableItemProps {
   company: Company;
 }
 
-const TableItem: React.FC<TableItemProps> = ({ company }) => {
+const TableItem = ({ company }: TableItemProps) => {
   const { dispatch } = useContext(Context);
 
   const handleDelete = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, id: number) => {

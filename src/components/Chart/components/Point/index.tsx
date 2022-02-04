@@ -8,7 +8,7 @@ interface CompanyProps {
   company: Company;
 }
 
-const Point: React.FC<CompanyProps> = ({ company }) => {
+const Point = ({ company }: CompanyProps) => {
   const { dispatch } = useContext(Context);
   const [isDragging, setIsDragging] = useState(false);
 
@@ -36,10 +36,10 @@ const Point: React.FC<CompanyProps> = ({ company }) => {
         onDragEnd={() => setIsDragging(false)}
       >
         <Label>{company.label}</Label>
-        <Circle  style={{ bottom: `${company.ability}%`, left: `${company.vision}%`,visibility: `${isDragging ? 'visible' : 'hidden'}` }}></Circle>
+        <Circle style={{ bottom: `${company.ability}%`, left: `${company.vision}%`, visibility: `${isDragging ? 'visible' : 'hidden'}` }}></Circle>
       </Container>
 
-      
+
     </>
   );
 };

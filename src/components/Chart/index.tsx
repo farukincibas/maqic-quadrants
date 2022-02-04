@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Container, AxisLabel, InnerAxis, AreaLabel } from './index.styles';
 import Point from './components/Point';
 import { Context } from '../../store/context';
 
-const Chart: React.FC = () => {
+const Chart = () => {
   const { state } = useContext(Context);
-console.log(state);
+
   return (
     <Container>
       <AxisLabel axis='x'>Completeness of vision &#8594;</AxisLabel>
