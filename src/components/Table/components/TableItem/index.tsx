@@ -18,11 +18,6 @@ const TableItem = ({ company }: TableItemProps) => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.name === 'checkbox') {
-      dispatch({ type: ActionTypes.updateCompany, payload: { ...company } });
-      return;
-    }
-
     dispatch({ type: ActionTypes.updateCompany, payload: { ...company, [e.target.name]: e.target.value } });
   };
 
