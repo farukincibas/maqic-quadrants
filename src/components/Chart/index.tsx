@@ -16,7 +16,7 @@ const Chart = () => {
       <AreaLabel area='top-right'>Leaders</AreaLabel>
       <AreaLabel area='bottom-left'>Niche Players</AreaLabel>
       <AreaLabel area='bottom-right'>Visionaries</AreaLabel>
-      {state.map((company) => (
+      {state?.map((company) => (
         <Point key={company.id} company={company} />
       ))}
     </Container>
