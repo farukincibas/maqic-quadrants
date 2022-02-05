@@ -17,8 +17,8 @@ const Point = ({ company }: CompanyProps) => {
 
     const updatedCompany = {
       ...company,
-      ability: -((e.clientY - parent.y - 500) / 5).toFixed(2),
-      vision: +((e.clientX - parent.x) / 5).toFixed(2),
+      ability: -((e.clientY - parent.y - 400) / 4).toFixed(2),
+      vision: +((e.clientX - parent.x) / 4).toFixed(2),
     };
     dispatch({ type: ActionTypes.updateCompany, payload: updatedCompany });
   };

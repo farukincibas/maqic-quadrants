@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme: { colors } }) => css`
     box-sizing: content-box;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border: 2px solid ${colors.DARK_GREY};
     position: relative;
   `}
@@ -19,6 +19,7 @@ export const InnerAxis = styled.div<InnerAxisProps>`
     height: ${orientation === 'vertical' ? '100%' : '2px'};
     width: ${orientation === 'vertical' ? '2px' : '100%'};
     background-color: ${colors.LIGHT_GREY};
+    border: 2px wide;
     position: absolute;
     top: 50%;
     left: 50%;
